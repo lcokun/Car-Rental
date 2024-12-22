@@ -47,3 +47,9 @@ information, and validate his inputs.
 
 This Github Repo is to streamline the workflow of the team to code the program.
 It is also used as documentation until the submission of the source code in UTM E-Learning.
+
+---
+
+# Flowchart
+
+https://lucid.app/lucidchart/8827951e-a9c2-4a2e-a815-0ad2a17f632e/edit?viewport_loc=1680%2C15%2C2219%2C1089%2C0_0&invitationId=inv_84c98192-f61c-4baf-851e-8acbd1fb5d92
