@@ -89,8 +89,11 @@ class RentalService:
         Sort the cars by a given criteria: either 'rental_price' or 'year'.
         """
         if criteria == "rental_price":
-            self.cars.sort(key = lambda car: car.rental_price) # lambda for temporary use of operations
-            self.cars.sort(key = lambda car: car.year, reverse=True)
+            # Sort by rental_price, then year (for cars with the same price)
+            self.cars.sort(key=lambda car: (car.rental_price, -car.year))
+        elif criteria == "year":
+            # Sort by year (descending)
+            self.cars.sort(key=lambda car: car.year, reverse=True)
         else:
             print("Invalid criteria for sorting.")
 
