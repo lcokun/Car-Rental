@@ -104,7 +104,8 @@ class RentalService:
         """
         if 0 <= index < len(self.cars) and self.cars[index].available:
             self.cars[index].available = False
-            print(f"\n🎉 Booking Confirmation 🎉")
+            # unicode code prints out "Party Popper" emoji
+            print(f"\n{chr(0x1F389)} Booking Confirmation {chr(0x1F389)}")
             print(f"You have successfully booked: {self.cars[index].display_info()}")
         else:
             print("Invalid choice or car not available.")
